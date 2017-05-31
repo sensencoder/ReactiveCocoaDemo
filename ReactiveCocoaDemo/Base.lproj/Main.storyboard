@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5Y-GL-sy4">
+                                <rect key="frame" x="50" y="250" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MI1-fn-XYl">
+                                <rect key="frame" x="50" y="290" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE5-be-nxs">
+                                <rect key="frame" x="138" y="350" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Q3J-Nz-9XK"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZPu-X0-sqy"/>
+                                </constraints>
+                                <state key="normal" title="确认登陆"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MI1-fn-XYl" firstAttribute="top" secondItem="L5Y-GL-sy4" secondAttribute="bottom" constant="10" id="Mud-vg-RVa"/>
+                            <constraint firstAttribute="trailing" secondItem="MI1-fn-XYl" secondAttribute="trailing" constant="50" id="Nbb-6o-Ijp"/>
+                            <constraint firstAttribute="trailing" secondItem="L5Y-GL-sy4" secondAttribute="trailing" constant="50" id="PVN-14-oSr"/>
+                            <constraint firstItem="uE5-be-nxs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SAb-zq-KnK"/>
+                            <constraint firstItem="uE5-be-nxs" firstAttribute="top" secondItem="MI1-fn-XYl" secondAttribute="bottom" constant="30" id="UI1-oh-MfY"/>
+                            <constraint firstItem="MI1-fn-XYl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="g1p-U3-yjE"/>
+                            <constraint firstItem="L5Y-GL-sy4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="liS-GP-tme"/>
+                            <constraint firstItem="L5Y-GL-sy4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="pX2-g4-9aO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="codeTextField" destination="MI1-fn-XYl" id="gez-rK-5Bq"/>
+                        <outlet property="loginButton" destination="uE5-be-nxs" id="Vgf-5J-Lnt"/>
+                        <outlet property="numberTextField" destination="L5Y-GL-sy4" id="1rb-Ua-tSf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
